@@ -1,44 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter,
+  Routes,
+  Route
 } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './App.tsx';
-import ErrorPage from './pages/ErrorPage.tsx';
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "signup",
-    element: <div />,
-  },
-  {
-    path: "login",
-    element: <div />,
-  },
-  {
-    path: "takeNotes",
-    element: <div />,
-  },
-  {
-    path: "viewNotes",
-    element: <div />,
-  },
-]);
+import Error from './pages/Error.tsx';
+import Login from './pages/Login.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} errorElement={<Error />} />
+        <Route path="/signup" element={<div />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/takeNotes" element={<div />} />
+        <Route path="/viewNotes" element={<div />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
