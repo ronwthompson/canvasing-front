@@ -10,7 +10,10 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './App.tsx';
 import Error from './pages/Error.tsx';
+import Signup from './pages/Signup.tsx';
 import Login from './pages/Login.tsx';
+import TakeNotes from './pages/TakeNotes.tsx';
+import ViewNotes from './pages/ViewNotes.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,10 +22,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} errorElement={<Error />} />
-        <Route path="/signup" element={<div />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/takeNotes" element={<div />} />
-        <Route path="/viewNotes" element={<div />} />
+        <Route path="/takeNotes" element={<TakeNotes />} />
+        <Route path="/viewNotes" element={<ViewNotes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
