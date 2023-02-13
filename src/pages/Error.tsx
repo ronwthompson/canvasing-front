@@ -7,6 +7,7 @@ type PageError = {
 }
 
 export default function Error() {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   //@ts-ignore useRouteError's return type is unknown since the error object is custom
   const error: PageError = useRouteError();
   console.error(error);

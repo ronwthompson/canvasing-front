@@ -4,13 +4,13 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="page">
+      <header className="page-header">
         <p>
           Canvasing App!
         </p>
-        <Link to="/takeNotes">Create New Note</Link>
-        <Link to="/viewNotes">View All Notes</Link>
+        <Link to="/takeNotes" className="page-link">Create New Note</Link>
+        <Link to="/viewNotes" className="page-link">View All Notes</Link>
       </header>
     </div>
   );

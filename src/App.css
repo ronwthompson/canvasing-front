@@ -1,10 +1,10 @@
-.App {
+.page {
   text-align: center;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
+}
+
+.page-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,22 @@
   color: white;
 }
 
-.App-link {
+.page-link {
   color: #61dafb;
+}
+
+.page-text {
+  color: grey;
+}
+.page-table {
+  display: inline-table;
+}
+
+table, th, td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.error {
+  color: red;
 }
