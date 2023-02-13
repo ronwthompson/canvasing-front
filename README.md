@@ -10,7 +10,3 @@ Open the [Splash Page](http://localhost:3000) to view the main pages in your bro
 - [View All Notes Page](http://localhost:3000/viewNotes)
 
 You will also need to download and run the backend, which is located [here](https://github.com/ronwthompson/canvasing-back).
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.
