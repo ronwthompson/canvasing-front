@@ -9,8 +9,8 @@ const App = () => {
         <p>
           Canvasing App!
         </p>
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Sign Up</Link>
+        <Link to="/takeNotes">Create New Note</Link>
+        <Link to="/viewNotes">View All Notes</Link>
       </header>
     </div>
   );

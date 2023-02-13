@@ -1,13 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const TakeNotesPage = () => {
+  const navigate = useNavigate();
   const submitForm = (e) => {
     e.preventDefault()
-
-    console.log(e.target.name.value)
-    console.log(e.target.email.value)
-    console.log(e.target.notes.value)
 
     const formData = {
       name: e.target.name.value,
@@ -24,7 +21,8 @@ const TakeNotesPage = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('Success:', data);
+        console.log('Success!');
+        navigate('/viewNotes')
       })
       .catch((error) => {
         console.error('Error:', error);
